@@ -1,31 +1,106 @@
 <?php
 /**
- * Functions and definitions for Kadence Child Theme
+ * Functions and definitions for PinnacleSafe Child Theme
  */
  
+ 
+
+// Enqueue Parent and Child Theme Styles
+function childpinnaclesafe_enqueue_styles() {
+    // Load the parent theme stylesheet
+    wp_enqueue_style('kadence-parent-style', get_template_directory_uri() . '/style.css');
+
+    // Load the child theme stylesheet, making it dependent on the parent style
+    wp_enqueue_style('child-style', get_stylesheet_uri(), array('kadence-parent-style'));
+}
+add_action('wp_enqueue_scripts', 'childpinnaclesafe_enqueue_styles');
+ 
+ 
+
 // Enqueue Styles and Scripts
-function companyname_enqueue_styles() {
+function pinnaclesafe_enqueue_styles() {
     // Enqueue Google Fonts
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap', false);
+    // wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap', false);
     
     // Enqueue CSS files from the child theme directory
 
-    wp_enqueue_style('example', get_stylesheet_directory_uri() . '/assets/css/example.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/example.css'));
+    // wp_enqueue_style('example', get_stylesheet_directory_uri() . '/assets/css/example.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/example.css'));
+    
+    // Enqueue CSS files from the child theme directory
+    wp_enqueue_style('bootstrap-css', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/bootstrap.min.css'));
+    wp_enqueue_style('fontawesome-css', get_stylesheet_directory_uri() . '/assets/css/fontawesome.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/fontawesome.css'));
+    wp_enqueue_style('magnific-popup-css', get_stylesheet_directory_uri() . '/assets/css/magnific-popup.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/magnific-popup.css'));
+    wp_enqueue_style('nice-select-css', get_stylesheet_directory_uri() . '/assets/css/nice-select.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/nice-select.css'));
+    wp_enqueue_style('slick-slider-css', get_stylesheet_directory_uri() . '/assets/css/slick-slider.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/slick-slider.css'));
+    wp_enqueue_style('owl-carousel-css', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.min.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/owl.carousel.min.css'));
+    wp_enqueue_style('aos-css', get_stylesheet_directory_uri() . '/assets/css/aos.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/aos.css'));
+    wp_enqueue_style('mobile-menu-css', get_stylesheet_directory_uri() . '/assets/css/mobile-menu.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/mobile-menu.css'));
+    wp_enqueue_style('main-css', get_stylesheet_directory_uri() . '/assets/css/main.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/main.css'));
+
+    
+    // Enqueue JS files from the child theme directory
+    // wp_enqueue_script('jquery'); // WordPress includes jQuery by default
+    wp_enqueue_script('jquery-3.6.0', get_stylesheet_directory_uri() . '/assets/js/jquery-3-6-0.min.js', array(), '3.6.0', true);
+    wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('aos-js', get_stylesheet_directory_uri() . '/assets/js/aos.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('fontawesome-js', get_stylesheet_directory_uri() . '/assets/js/fontawesome.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('mobile-menu-js', get_stylesheet_directory_uri() . '/assets/js/mobile-menu.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('magnific-popup-js', get_stylesheet_directory_uri() . '/assets/js/jquery.magnific-popup.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('owl-carousel-js', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('slick-slider-js', get_stylesheet_directory_uri() . '/assets/js/slick-slider.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('gsap-js', get_stylesheet_directory_uri() . '/assets/js/gsap.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('countup-js', get_stylesheet_directory_uri() . '/assets/js/jquery.countup.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('scrolltrigger-js', get_stylesheet_directory_uri() . '/assets/js/ScrollTrigger.min.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('splittext-js', get_stylesheet_directory_uri() . '/assets/js/Splitetext.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('smoothscroll-js', get_stylesheet_directory_uri() . '/assets/js/SmoothScroll.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('text-animation-js', get_stylesheet_directory_uri() . '/assets/js/text-animation.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('lineprogressbar-js', get_stylesheet_directory_uri() . '/assets/js/jquery.lineProgressbar.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('tilt-js', get_stylesheet_directory_uri() . '/assets/js/tilt.jquery.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/assets/js/main.js', array('jquery'), '1.0.0', true);
+
+
+    // // Enqueue JS files from the child theme directory
+    // wp_enqueue_script('jquery'); // WordPress includes jQuery by default
+    // wp_enqueue_script('popper', get_stylesheet_directory_uri() . '/assets/js/popper.min.js', array('jquery'), '1.0.0', true);
+    // wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.0.0', true);
+    // wp_enqueue_script('owl-js', get_stylesheet_directory_uri() . '/assets/js/owl.js', array('jquery'), '1.0.0', true);
+    // wp_enqueue_script('wow-js', get_stylesheet_directory_uri() . '/assets/js/wow.js', array('jquery'), '1.0.0', true);
+    // wp_enqueue_script('validation-js', get_stylesheet_directory_uri() . '/assets/js/validation.js', array('jquery'), '1.0.0', true);
+    // wp_enqueue_script('fancybox-js', get_stylesheet_directory_uri() . '/assets/js/jquery.fancybox.js', array('jquery'), '1.0.0', true);
+    // wp_enqueue_script('appear-js', get_stylesheet_directory_uri() . '/assets/js/appear.js', array('jquery'), '1.0.0', true);
+    // wp_enqueue_script('countto-js', get_stylesheet_directory_uri() . '/assets/js/jquery.countTo.js', array('jquery'), '1.0.0', true);
+    // wp_enqueue_script('main-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0.0', true);
+}
+add_action('wp_enqueue_scripts', 'pinnaclesafe_enqueue_styles');
+
+ 
+ 
+ 
+ 
+ 
+// Enqueue Styles and Scripts
+// function companyname_enqueue_styles() {
+//     // Enqueue Google Fonts
+//     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap', false);
+    
+//     // Enqueue CSS files from the child theme directory
+
+//     wp_enqueue_style('example', get_stylesheet_directory_uri() . '/assets/css/example.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/example.css'));
     
 
-    // Enqueue JS files from the child theme directory
-    wp_enqueue_script('jquery'); // WordPress includes jQuery by default
-    wp_enqueue_script('popper', get_stylesheet_directory_uri() . '/assets/js/popper.min.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('owl-js', get_stylesheet_directory_uri() . '/assets/js/owl.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('wow-js', get_stylesheet_directory_uri() . '/assets/js/wow.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('validation-js', get_stylesheet_directory_uri() . '/assets/js/validation.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('fancybox-js', get_stylesheet_directory_uri() . '/assets/js/jquery.fancybox.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('appear-js', get_stylesheet_directory_uri() . '/assets/js/appear.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('countto-js', get_stylesheet_directory_uri() . '/assets/js/jquery.countTo.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('main-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0.0', true);
-}
-add_action('wp_enqueue_scripts', 'companyname_enqueue_styles');
+//     // Enqueue JS files from the child theme directory
+//     wp_enqueue_script('jquery'); // WordPress includes jQuery by default
+//     wp_enqueue_script('popper', get_stylesheet_directory_uri() . '/assets/js/popper.min.js', array('jquery'), '1.0.0', true);
+//     wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '1.0.0', true);
+//     wp_enqueue_script('owl-js', get_stylesheet_directory_uri() . '/assets/js/owl.js', array('jquery'), '1.0.0', true);
+//     wp_enqueue_script('wow-js', get_stylesheet_directory_uri() . '/assets/js/wow.js', array('jquery'), '1.0.0', true);
+//     wp_enqueue_script('validation-js', get_stylesheet_directory_uri() . '/assets/js/validation.js', array('jquery'), '1.0.0', true);
+//     wp_enqueue_script('fancybox-js', get_stylesheet_directory_uri() . '/assets/js/jquery.fancybox.js', array('jquery'), '1.0.0', true);
+//     wp_enqueue_script('appear-js', get_stylesheet_directory_uri() . '/assets/js/appear.js', array('jquery'), '1.0.0', true);
+//     wp_enqueue_script('countto-js', get_stylesheet_directory_uri() . '/assets/js/jquery.countTo.js', array('jquery'), '1.0.0', true);
+//     wp_enqueue_script('main-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0.0', true);
+// }
+// add_action('wp_enqueue_scripts', 'companyname_enqueue_styles');
 
 
 // Register Custom Post Types and Taxonomies
