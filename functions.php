@@ -2,11 +2,12 @@
 /**
  * Functions and definitions for PinnacleSafe Child Theme
  */
- 
- 
+
+
 
 // Enqueue Parent and Child Theme Styles
-function childpinnaclesafe_enqueue_styles() {
+function childpinnaclesafe_enqueue_styles()
+{
     // Load the parent theme stylesheet
     wp_enqueue_style('kadence-parent-style', get_template_directory_uri() . '/style.css');
 
@@ -14,18 +15,19 @@ function childpinnaclesafe_enqueue_styles() {
     wp_enqueue_style('child-style', get_stylesheet_uri(), array('kadence-parent-style'));
 }
 add_action('wp_enqueue_scripts', 'childpinnaclesafe_enqueue_styles');
- 
- 
+
+
 
 // Enqueue Styles and Scripts
-function pinnaclesafe_enqueue_styles() {
+function pinnaclesafe_enqueue_styles()
+{
     // Enqueue Google Fonts
     // wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap', false);
-    
+
     // Enqueue CSS files from the child theme directory
 
     // wp_enqueue_style('example', get_stylesheet_directory_uri() . '/assets/css/example.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/example.css'));
-    
+
     // Enqueue CSS files from the child theme directory
     wp_enqueue_style('bootstrap-css', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/bootstrap.min.css'));
     wp_enqueue_style('fontawesome-css', get_stylesheet_directory_uri() . '/assets/css/fontawesome.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/fontawesome.css'));
@@ -37,7 +39,7 @@ function pinnaclesafe_enqueue_styles() {
     wp_enqueue_style('mobile-menu-css', get_stylesheet_directory_uri() . '/assets/css/mobile-menu.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/mobile-menu.css'));
     wp_enqueue_style('main-css', get_stylesheet_directory_uri() . '/assets/css/main.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/main.css'));
 
-    
+
     // Enqueue JS files from the child theme directory
     // wp_enqueue_script('jquery'); // WordPress includes jQuery by default
     wp_enqueue_script('jquery-3.6.0', get_stylesheet_directory_uri() . '/assets/js/jquery-3-6-0.min.js', array(), '3.6.0', true);
@@ -73,20 +75,20 @@ function pinnaclesafe_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'pinnaclesafe_enqueue_styles');
 
- 
- 
- 
- 
- 
+
+
+
+
+
 // Enqueue Styles and Scripts
 // function companyname_enqueue_styles() {
 //     // Enqueue Google Fonts
 //     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap', false);
-    
+
 //     // Enqueue CSS files from the child theme directory
 
 //     wp_enqueue_style('example', get_stylesheet_directory_uri() . '/assets/css/example.css', array(), filemtime(get_stylesheet_directory() . '/assets/css/example.css'));
-    
+
 
 //     // Enqueue JS files from the child theme directory
 //     wp_enqueue_script('jquery'); // WordPress includes jQuery by default
@@ -104,7 +106,8 @@ add_action('wp_enqueue_scripts', 'pinnaclesafe_enqueue_styles');
 
 
 // Register Custom Post Types and Taxonomies
-function companyname_register_custom_post_types() {
+function companyname_register_custom_post_types()
+{
 
 
 
@@ -133,30 +136,30 @@ function companyname_register_custom_post_types() {
 
     // Register Project Category
     register_taxonomy('project_category', array('projects'), array(
-        'hierarchical'      => true,
-        'labels'            => array(
-            'name'          => __('Project Categories', 'companyname'),
+        'hierarchical' => true,
+        'labels' => array(
+            'name' => __('Project Categories', 'companyname'),
             'singular_name' => __('Project Category', 'companyname'),
         ),
-        'show_ui'           => true,
+        'show_ui' => true,
         'show_admin_column' => true,
-        'query_var'         => true,
-        'rewrite'           => array('slug' => 'project-category'),
-        'show_in_rest'      => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'project-category'),
+        'show_in_rest' => true,
     ));
 
     // Register Project Tag
     register_taxonomy('project_tag', array('projects'), array(
-        'hierarchical'          => false,
-        'labels'                => array(
-            'name'              => __('Project Tags', 'companyname'),
-            'singular_name'     => __('Project Tag', 'companyname'),
+        'hierarchical' => false,
+        'labels' => array(
+            'name' => __('Project Tags', 'companyname'),
+            'singular_name' => __('Project Tag', 'companyname'),
         ),
-        'show_ui'               => true,
-        'show_admin_column'     => true,
-        'query_var'             => true,
-        'rewrite'               => array('slug' => 'project-tag'),
-        'show_in_rest'          => true,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'project-tag'),
+        'show_in_rest' => true,
     ));
 
 
@@ -165,28 +168,30 @@ add_action('init', 'companyname_register_custom_post_types');
 
 
 // Register Sidebars
-function companyname_widgets_init() {
+function companyname_widgets_init()
+{
 
     // Projects Sidebar
-    register_sidebar( array(
-        'name'          => __('Projects Sidebar', 'companyname'),
-        'id'            => 'projects-sidebar',
-        'description'   => __('Widgets in this area will be shown on project pages.', 'companyname'),
+    register_sidebar(array(
+        'name' => __('Projects Sidebar', 'companyname'),
+        'id' => 'projects-sidebar',
+        'description' => __('Widgets in this area will be shown on project pages.', 'companyname'),
         'before_widget' => '<div class="sidebar-widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<div class="widget-title"><h4>',
-        'after_title'   => '</h4></div>',
-    ) );
+        'after_widget' => '</div>',
+        'before_title' => '<div class="widget-title"><h4>',
+        'after_title' => '</h4></div>',
+    ));
 
 }
-add_action( 'widgets_init', 'companyname_widgets_init' );
+add_action('widgets_init', 'companyname_widgets_init');
 
 
 // Register Navigation Menus
-function companyname_register_menus() {
+function companyname_register_menus()
+{
     register_nav_menus(array(
         'primary' => __('Primary Menu Desktop', 'companyname'),
-        'mobile'  => __('Mobile Menu', 'companyname'),
+        'mobile' => __('Mobile Menu', 'companyname'),
     ));
 }
 add_action('init', 'companyname_register_menus');
@@ -196,7 +201,8 @@ add_action('init', 'companyname_register_menus');
 // require_once get_stylesheet_directory() . '/inc/class-custom-walker.php';
 
 
-function custom_excerpt($length = 30, $more = '...') {
+function custom_excerpt($length = 30, $more = '...')
+{
     $excerpt = get_the_excerpt(); // Get the excerpt
     $excerpt = wp_trim_words($excerpt, $length, $more); // Trim words and add custom more text
     return $excerpt;

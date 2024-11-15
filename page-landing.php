@@ -41,16 +41,20 @@ get_header();
             <div class="col-lg-6">
                 <div class="hero1-images">
                     <div class="image1">
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/bg/hero1-main-bg.png'); ?>" alt="Background Image">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/bg/hero1-main-bg.png'); ?>"
+                            alt="Background Image">
                     </div>
                     <div class="image2 overlay-anim" data-aos="zoom-in-up" data-aos-duration="700">
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/hero/hero1-main-img.png'); ?>" alt="Hero Image">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/hero/hero1-main-img.png'); ?>"
+                            alt="Hero Image">
                     </div>
                     <div class="image3 shape-animaiton2" data-aos="zoom-in-up" data-aos-duration="700">
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/shapes/review-img.png'); ?>" alt="Review Shape">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/shapes/review-img.png'); ?>"
+                            alt="Review Shape">
                     </div>
                     <div class="image4 shape-animaiton3">
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/shapes/hero1-shape.png'); ?>" alt="Hero Shape">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/shapes/hero1-shape.png'); ?>"
+                            alt="Hero Shape">
                     </div>
                 </div>
             </div>
@@ -86,10 +90,11 @@ get_header();
                     ];
 
                     // Loop through each logo image
-                    foreach ($logos as $logo) :
-                    ?>
+                    foreach ($logos as $logo):
+                        ?>
                         <div class="single-slider">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/logo/' . $logo); ?>" alt="Slider Logo">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/logo/' . $logo); ?>"
+                                alt="Slider Logo">
                         </div>
                     <?php endforeach; ?>
                 </div>
@@ -110,7 +115,8 @@ get_header();
                 <div data-aos="zoom-in-up" data-aos-duration="700">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/choose1-icon1.png'); ?>" alt="Client Success Icon">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/choose1-icon1.png'); ?>"
+                                alt="Client Success Icon">
                         </div>
                         <div class="heading1">
                             <h3><span class="counter">98</span>%</h3>
@@ -123,7 +129,8 @@ get_header();
                 <div data-aos="zoom-in-up" data-aos-duration="900">
                     <div class="icon-box">
                         <div class="icon">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/choose1-icon2.png'); ?>" alt="Team Advisors Icon">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/choose1-icon2.png'); ?>"
+                                alt="Team Advisors Icon">
                         </div>
                         <div class="heading1">
                             <h3><span class="counter">79</span>%</h3>
@@ -136,7 +143,8 @@ get_header();
                 <div data-aos="zoom-in-up" data-aos-duration="1200">
                     <div class="icon-box icon-box2">
                         <div class="icon">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/choose1-icon3.png'); ?>" alt="Years Experience Icon">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/choose1-icon3.png'); ?>"
+                                alt="Years Experience Icon">
                         </div>
                         <div class="heading1">
                             <h3><span class="counter">12</span>+</h3>
@@ -150,7 +158,8 @@ get_header();
             <!-- Image Section -->
             <div class="col-lg-5">
                 <div class="image reveal overlay-anim">
-                    <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/others/choose1-img.png'); ?>" alt="Why Choose Us Image">
+                    <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/others/choose1-img.png'); ?>"
+                        alt="Why Choose Us Image">
                 </div>
             </div>
 
@@ -161,7 +170,8 @@ get_header();
                     <h2 class="text-anime-style-3">Choose Excellence Elevate Your Hiring Experience</h2>
                     <div class="space16"></div>
                     <p data-aos="fade-left" data-aos-duration="900">
-                        Our team of industry experts is dedicated to understanding your unique needs and delivering tailored solutions that propel your business forward.
+                        Our team of industry experts is dedicated to understanding your unique needs and delivering
+                        tailored solutions that propel your business forward.
                     </p>
 
                     <div class="space10"></div>
@@ -190,7 +200,8 @@ get_header();
 
                     <div class="space30"></div>
                     <div data-aos="fade-left" data-aos-duration="1100">
-                        <a class="theme-btn1" href="<?php echo esc_url(site_url('/about')); ?>">About Us <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                        <a class="theme-btn1" href="<?php echo esc_url(site_url('/about')); ?>">About Us <span><i
+                                    class="fa-solid fa-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -228,15 +239,18 @@ get_header();
             <div class="col-lg-4 col-md-6">
                 <div class="service1-box" data-aos="zoom-in-up" data-aos-duration="700">
                     <div class="image overlay-anim">
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/service/service1-img1.png'); ?>" alt="Executive Search Services Image">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/service/service1-img1.png'); ?>"
+                            alt="Executive Search Services Image">
                     </div>
                     <div class="hover-area">
                         <div class="icon">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/service1-icon1.png'); ?>" alt="Executive Search Icon">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/service1-icon1.png'); ?>"
+                                alt="Executive Search Icon">
                         </div>
                         <div class="space16"></div>
                         <div class="heading1-w">
-                            <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">Executive Search Services</a></h4>
+                            <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">Executive Search
+                                    Services</a></h4>
                             <div class="space16"></div>
                             <p>Whether you're looking for temporary staffing, direct hire placements, </p>
                         </div>
@@ -248,15 +262,18 @@ get_header();
             <div class="col-lg-4 col-md-6">
                 <div class="service1-box active" data-aos="zoom-in-up" data-aos-duration="900">
                     <div class="image overlay-anim">
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/service/service1-img2.png'); ?>" alt="HR Consulting & Staffing Image">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/service/service1-img2.png'); ?>"
+                            alt="HR Consulting & Staffing Image">
                     </div>
                     <div class="hover-area">
                         <div class="icon">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/service1-icon2.png'); ?>" alt="HR Consulting Icon">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/service1-icon2.png'); ?>"
+                                alt="HR Consulting Icon">
                         </div>
                         <div class="space16"></div>
                         <div class="heading1-w">
-                            <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">HR Consulting & Staffing</a></h4>
+                            <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">HR Consulting &
+                                    Staffing</a></h4>
                             <div class="space16"></div>
                             <p>Whether you're looking for temporary staffing, direct hire placements, </p>
                         </div>
@@ -268,15 +285,18 @@ get_header();
             <div class="col-lg-4 col-md-6">
                 <div class="service1-box" data-aos="zoom-in-up" data-aos-duration="1100">
                     <div class="image overlay-anim">
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/service/service1-img3.png'); ?>" alt="Temporary Staffing Services Image">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/service/service1-img3.png'); ?>"
+                            alt="Temporary Staffing Services Image">
                     </div>
                     <div class="hover-area">
                         <div class="icon">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/service1-icon3.png'); ?>" alt="Temporary Staffing Icon">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/service1-icon3.png'); ?>"
+                                alt="Temporary Staffing Icon">
                         </div>
                         <div class="space16"></div>
                         <div class="heading1-w">
-                            <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">Temporary Staffing Services</a></h4>
+                            <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">Temporary Staffing
+                                    Services</a></h4>
                             <div class="space16"></div>
                             <p>Whether you're looking for temporary staffing, direct hire placements, </p>
                         </div>
@@ -328,7 +348,8 @@ get_header();
 
             <!-- Carousel Start -->
             <div class="project-two__carousel-container" data-aos="fade-up" data-aos-duration="900">
-                <div class="project-two__carousel owl-carousel owl-theme thm-owl__carousel project-style1-carousel owl-dot-style1">
+                <div
+                    class="project-two__carousel owl-carousel owl-theme thm-owl__carousel project-style1-carousel owl-dot-style1">
                     <?php
                     // Define project items as an array of associative arrays
                     $projects = [
@@ -353,24 +374,29 @@ get_header();
                     ];
 
                     // Loop through the projects to create slides
-                    foreach ($projects as $project) : ?>
+                    foreach ($projects as $project): ?>
                         <div class="project-two__single-box">
                             <ul class="project-two__box list-unstyled">
                                 <li>
                                     <div class="project-two__box-content">
-                                        <div class="single-project-two__bg" style="background-image: url('<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/project/' . $project['image']); ?>');">
+                                        <div class="single-project-two__bg"
+                                            style="background-image: url('<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/project/' . $project['image']); ?>');">
                                         </div>
                                         <div class="img-holder-img-bg"></div>
                                         <div class="project-two__box-content-inner-icon">
-                                            <a href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/service/service1-img1.png'); ?>" class="img-popup"><i class="icon-next"></i></a>
+                                            <a href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/service/service1-img1.png'); ?>"
+                                                class="img-popup"><i class="icon-next"></i></a>
                                         </div>
                                         <div class="project-two__box-content-inner">
                                             <div class="project-two__box-content-inner-wrapper">
                                                 <p><?php echo esc_html($project['description']); ?></p>
-                                                <h4><a href="<?php echo esc_url($project['link']); ?>"><?php echo esc_html($project['title']); ?></a></h4>
+                                                <h4><a
+                                                        href="<?php echo esc_url($project['link']); ?>"><?php echo esc_html($project['title']); ?></a>
+                                                </h4>
                                             </div>
                                             <div class="icon">
-                                                <a href="<?php echo esc_url($project['link']); ?>"><i class="fa-solid fa-arrow-right"></i></a>
+                                                <a href="<?php echo esc_url($project['link']); ?>"><i
+                                                        class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -417,7 +443,8 @@ get_header();
 
             <!-- Carousel Start -->
             <div class="project-two__carousel-container">
-                <div class="project-two__carousel owl-carousel owl-theme thm-owl__carousel project-style1-carousel owl-dot-style1">
+                <div
+                    class="project-two__carousel owl-carousel owl-theme thm-owl__carousel project-style1-carousel owl-dot-style1">
                     <?php
                     // Define project items as an array for dynamic content
                     $projects = [
@@ -442,24 +469,29 @@ get_header();
                     ];
 
                     // Loop through the project items to create slides
-                    foreach ($projects as $project) : ?>
+                    foreach ($projects as $project): ?>
                         <div class="project-two__single-box">
                             <ul class="project-two__box project-two__box2 list-unstyled">
                                 <li class="active">
                                     <div class="project-two__box-content project-two__box-content2">
-                                        <div class="single-project-two__bg" style="background-image: url('<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/project/' . $project['image']); ?>');">
+                                        <div class="single-project-two__bg"
+                                            style="background-image: url('<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/project/' . $project['image']); ?>');">
                                         </div>
                                         <div class="img-holder-img-bg"></div>
                                         <div class="project-two__box-content-inner-icon">
-                                            <a href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/service/service1-img1.png'); ?>" class="img-popup"><i class="icon-next"></i></a>
+                                            <a href="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/service/service1-img1.png'); ?>"
+                                                class="img-popup"><i class="icon-next"></i></a>
                                         </div>
                                         <div class="project-two__box-content-inner">
                                             <div class="project-two__box-content-inner-wrapper">
                                                 <p><?php echo esc_html($project['description']); ?></p>
-                                                <h4><a href="<?php echo esc_url($project['link']); ?>"><?php echo esc_html($project['title']); ?></a></h4>
+                                                <h4><a
+                                                        href="<?php echo esc_url($project['link']); ?>"><?php echo esc_html($project['title']); ?></a>
+                                                </h4>
                                             </div>
                                             <div class="icon">
-                                                <a href="<?php echo esc_url($project['link']); ?>"><i class="fa-solid fa-arrow-right"></i></a>
+                                                <a href="<?php echo esc_url($project['link']); ?>"><i
+                                                        class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -489,7 +521,8 @@ get_header();
             <!-- Work Image Section -->
             <div class="col-lg-6">
                 <div class="work-img reveal overlay-anim">
-                    <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/work/work1-image.png'); ?>" alt="Work Image">
+                    <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/work/work1-image.png'); ?>"
+                        alt="Work Image">
                 </div>
             </div>
 
@@ -500,7 +533,8 @@ get_header();
                     <h2 class="text-anime-style-3">Solving Recruitment Using Technology</h2>
                     <div class="space16"></div>
                     <p data-aos="fade-left" data-aos-duration="900">
-                        Whether you're seeking temporary assignments, placements, or executive-level positions, our curated solutions provide expertise in staffing.
+                        Whether you're seeking temporary assignments, placements, or executive-level positions, our
+                        curated solutions provide expertise in staffing.
                     </p>
 
                     <div class="space10"></div>
@@ -509,11 +543,14 @@ get_header();
                     <div class="" data-aos="fade-left" data-aos-duration="900">
                         <div class="work1-box">
                             <div class="icon">
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/work1-icon1.png'); ?>" alt="Sourcing the Best Icon">
+                                <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/work1-icon1.png'); ?>"
+                                    alt="Sourcing the Best Icon">
                             </div>
                             <div class="heading1">
-                                <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">Sourcing the Best</a></h4>
-                                <p>Stay tuned for regular updates and valuable insights from our team of staffing experts.</p>
+                                <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">Sourcing the Best</a>
+                                </h4>
+                                <p>Stay tuned for regular updates and valuable insights from our team of staffing
+                                    experts.</p>
                             </div>
                         </div>
                     </div>
@@ -521,11 +558,14 @@ get_header();
                     <div class="" data-aos="fade-left" data-aos-duration="700">
                         <div class="work1-box">
                             <div class="icon">
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/work1-icon2.png'); ?>" alt="Volume Hiring Icon">
+                                <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/work1-icon2.png'); ?>"
+                                    alt="Volume Hiring Icon">
                             </div>
                             <div class="heading1">
-                                <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">Volume Hiring</a></h4>
-                                <p>Remember to keep your blog content informative, engaging, and relevant to your target audience.</p>
+                                <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">Volume Hiring</a>
+                                </h4>
+                                <p>Remember to keep your blog content informative, engaging, and relevant to your target
+                                    audience.</p>
                             </div>
                         </div>
                     </div>
@@ -533,11 +573,14 @@ get_header();
                     <div class="" data-aos="fade-left" data-aos-duration="1100">
                         <div class="work1-box">
                             <div class="icon">
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/work1-icon3.png'); ?>" alt="Partners in Team Building Icon">
+                                <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/work1-icon3.png'); ?>"
+                                    alt="Partners in Team Building Icon">
                             </div>
                             <div class="heading1">
-                                <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">Partners in Team Building</a></h4>
-                                <p>This will help drive traffic to your website & establish your agency as a trusted authority.</p>
+                                <h4><a href="<?php echo esc_url(site_url('/service-details')); ?>">Partners in Team
+                                        Building</a></h4>
+                                <p>This will help drive traffic to your website & establish your agency as a trusted
+                                    authority.</p>
                             </div>
                         </div>
                     </div>
@@ -565,7 +608,8 @@ get_header();
                     <h2 class="text-anime-style-3">Real Stories, Real Results</h2>
                     <div class="space16"></div>
                     <p data-aos="fade-left" data-aos-duration="800">
-                        Discover why businesses trust us to find the right talent and candidates trust us to find the perfect fit.
+                        Discover why businesses trust us to find the right talent and candidates trust us to find the
+                        perfect fit.
                     </p>
                 </div>
             </div>
@@ -602,12 +646,12 @@ get_header();
                 ];
 
                 // Loop through each testimonial and output the HTML
-                foreach ($testimonials as $testimonial) : ?>
+                foreach ($testimonials as $testimonial): ?>
                     <div class="single-slider">
                         <div class="row">
                             <div class="col-md-8">
                                 <ul class="stars">
-                                    <?php for ($i = 0; $i < $testimonial['stars']; $i++) : ?>
+                                    <?php for ($i = 0; $i < $testimonial['stars']; $i++): ?>
                                         <li><i class="fa-solid fa-star"></i></li>
                                     <?php endfor; ?>
                                 </ul>
@@ -622,7 +666,8 @@ get_header();
 
                             <div class="col-md-4">
                                 <div class="tes1-image">
-                                    <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/testimonial/' . $testimonial['image']); ?>" alt="<?php echo esc_attr($testimonial['name']); ?>">
+                                    <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/testimonial/' . $testimonial['image']); ?>"
+                                        alt="<?php echo esc_attr($testimonial['name']); ?>">
                                 </div>
                             </div>
                         </div>
@@ -645,21 +690,23 @@ get_header();
 <div class="contact1 sp">
     <div class="container">
         <div class="row align-items-center">
-            <!-- Contact Information Section -->
+            <!-- Contact Information -->
             <div class="col-lg-6">
                 <div class="heading1-w">
                     <span class="span" data-aos="zoom-in-left" data-aos-duration="700">Contact Us</span>
                     <h2 class="text-anime-style-3">Get in Touch Let's Start the Conversation</h2>
                     <div class="space16"></div>
                     <p data-aos="fade-right" data-aos-duration="900">
-                        We're here to help you find the right staffing solutions for your needs. Whether you're a company looking to hire top talent or a candidate seeking your next career opportunity.
+                        We're here to help you find the right staffing solutions for your needs. Whether you're a
+                        company looking to hire top talent or a candidate seeking your next career opportunity.
                     </p>
 
-                    <!-- Contact Methods -->
+                    <!-- Contact Box 1 -->
                     <div class="" data-aos="fade-right" data-aos-duration="800">
                         <div class="contact1-box">
                             <div class="icon">
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/contact-icon1.png'); ?>" alt="Call Icon">
+                                <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/contact-icon1.png'); ?>"
+                                    alt="Phone Icon">
                             </div>
                             <div class="heading">
                                 <p>Gives us a Call</p>
@@ -668,10 +715,12 @@ get_header();
                         </div>
                     </div>
 
+                    <!-- Contact Box 2 -->
                     <div class="" data-aos="fade-right" data-aos-duration="1100">
                         <div class="contact1-box">
                             <div class="icon">
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/contact-icon2.png'); ?>" alt="Email Icon">
+                                <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/contact-icon2.png'); ?>"
+                                    alt="Email Icon">
                             </div>
                             <div class="heading">
                                 <p>Send me Mail</p>
@@ -679,28 +728,78 @@ get_header();
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
-            <!-- Contact Form Section -->
+            <!-- Contact Form -->
             <div class="col-lg-6">
                 <div class="contact1-form" data-aos="zoom-out" data-aos-duration="900">
                     <div class="heading1">
                         <h3>Send us a Message</h3>
                         <div class="space16"></div>
-                        <p>Feel free to reach out to us with any questions, inquiries, or staffing requirements you may have. Our experienced team is here to assist you.</p>
+                        <p>
+                            Feel free to reach out to us with any questions, inquiries, or staffing requirements you may
+                            have. Our experienced team is here to assist you.
+                        </p>
                     </div>
                     <div class="space10"></div>
 
-                    <!-- Contact Form -->
-                    <?php echo do_shortcode('[contact-form-7 id="1234" title="Contact form 1"]'); ?>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single-input">
+                                    <input type="text" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-input">
+                                    <input type="text" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-input">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-input">
+                                    <input type="number" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-input">
+                                    <input type="text" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="single-input">
+                                    <textarea rows="4" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="button">
+                                    <button type="submit" class="theme-btn1">
+                                        Submit Now <span><i class="fa-solid fa-arrow-right"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Contact Area End -->
+
+
+
+
+
+
+
+
+
 
 
 <!--=====CONTACT AREA END=======-->
@@ -765,11 +864,13 @@ get_header();
             ];
 
             // Loop through team members to output each one
-            foreach ($team_members as $index => $member) : ?>
+            foreach ($team_members as $index => $member): ?>
                 <div class="col-lg-4 col-md-6">
-                    <div class="team1-box overlay-anim" data-aos="zoom-in-up" data-aos-duration="<?php echo 700 + ($index * 200); ?>">
+                    <div class="team1-box overlay-anim" data-aos="zoom-in-up"
+                        data-aos-duration="<?php echo 700 + ($index * 200); ?>">
                         <div class="image">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/team/' . $member['image']); ?>" alt="<?php echo esc_attr($member['name']); ?>">
+                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/team/' . $member['image']); ?>"
+                                alt="<?php echo esc_attr($member['name']); ?>">
                         </div>
                         <div class="heading-area">
                             <div class="heading1">
@@ -778,10 +879,14 @@ get_header();
                             </div>
                             <div class="icons">
                                 <ul>
-                                    <li><a href="<?php echo esc_url($member['social_links']['instagram']); ?>"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="<?php echo esc_url($member['social_links']['facebook']); ?>"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="<?php echo esc_url($member['social_links']['linkedin']); ?>"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    <li><a href="<?php echo esc_url($member['social_links']['twitter']); ?>"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="<?php echo esc_url($member['social_links']['instagram']); ?>"><i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="<?php echo esc_url($member['social_links']['facebook']); ?>"><i
+                                                class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="<?php echo esc_url($member['social_links']['linkedin']); ?>"><i
+                                                class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="<?php echo esc_url($member['social_links']['twitter']); ?>"><i
+                                                class="fa-brands fa-x-twitter"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -809,8 +914,10 @@ get_header();
                     <h2 class="text-anime-style-3">Flash Your Source for Industry Updates</h2>
                     <div class="space16"></div>
                     <p data-aos="fade-up" data-aos-duration="800">
-                        Our blog serves as a valuable resource for both job seekers and employers, offering insightful <br>
-                        articles, industry trends, and expert tips on everything from resume building to interview techniques.
+                        Our blog serves as a valuable resource for both job seekers and employers, offering insightful
+                        <br>
+                        articles, industry trends, and expert tips on everything from resume building to interview
+                        techniques.
                     </p>
                 </div>
             </div>
@@ -818,56 +925,73 @@ get_header();
 
         <div class="space30"></div>
 
+        <!-- Blog Posts Static -->
         <div class="row">
-            <?php
-            // WP Query to fetch the latest blog posts
-            $blog_query = new WP_Query([
-                'posts_per_page' => 2, // Display two blog posts
-                'post_status' => 'publish'
-            ]);
-
-            // Loop through each blog post
-            if ($blog_query->have_posts()) :
-                while ($blog_query->have_posts()) : $blog_query->the_post(); ?>
-                    <div class="col-lg-6">
-                        <div class="blog1-box overlay-anim" data-aos="zoom-in-up" data-aos-duration="800">
-                            <div class="image">
-                                <?php if (has_post_thumbnail()) : ?>
-                                    <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title_attribute(); ?>">
-                                <?php else : ?>
-                                    <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/blog/default-blog.png'); ?>" alt="Default Blog Image">
-                                <?php endif; ?>
-                            </div>
-                            <div class="heading-area">
-                                <div class="tags">
-                                    <a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/date.png'); ?>" alt="Date Icon"> <?php echo get_the_date('M j, Y'); ?></a>
-                                    <a href="#"><img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/user.png'); ?>" alt="User Icon"> By <?php the_author(); ?></a>
-                                </div>
-                                <div class="heading1">
-                                    <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                    <div class="space16"></div>
-                                    <p><?php echo wp_trim_words(get_the_excerpt(), 15, '...'); ?></p>
-                                    <div class="blog1-border"></div>
-                                    <a href="<?php the_permalink(); ?>" class="learn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                                </div>
-                            </div>
+            <!-- First Blog Post -->
+            <div class="col-lg-6">
+                <div class="blog1-box overlay-anim" data-aos="zoom-in-up" data-aos-duration="800">
+                    <div class="image">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/blog/blog1-img1.png'); ?>"
+                            alt="Blog Post 1">
+                    </div>
+                    <div class="heading-area">
+                        <div class="tags">
+                            <a href="#"><img
+                                    src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/date.png'); ?>"
+                                    alt="Date Icon"> Apl 2, 2024</a>
+                            <a href="#"><img
+                                    src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/user.png'); ?>"
+                                    alt="User Icon"> By Ethan Smith</a>
+                        </div>
+                        <div class="heading1">
+                            <h4><a href="#">Get the Scoop: Our Latest News & Announcements</a></h4>
+                            <div class="space16"></div>
+                            <p>Whether you're looking to navigate your career path or enhance.</p>
+                            <div class="blog1-border"></div>
+                            <a href="#" class="learn">Learn More <span><i
+                                        class="fa-solid fa-arrow-right"></i></span></a>
                         </div>
                     </div>
-                <?php endwhile;
-                wp_reset_postdata();
-            else : ?>
-                <p class="text-center">No recent blog posts available.</p>
-            <?php endif; ?>
+                </div>
+            </div>
+
+            <!-- Second Blog Post -->
+            <div class="col-lg-6">
+                <div class="blog1-box overlay-anim" data-aos="zoom-in-up" data-aos-duration="900">
+                    <div class="image">
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/blog/blog1-img2.png'); ?>"
+                            alt="Blog Post 2">
+                    </div>
+                    <div class="heading-area">
+                        <div class="tags">
+                            <a href="#"><img
+                                    src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/date.png'); ?>"
+                                    alt="Date Icon"> Apl 2, 2024</a>
+                            <a href="#"><img
+                                    src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/user.png'); ?>"
+                                    alt="User Icon"> By Ethan Smith</a>
+                        </div>
+                        <div class="heading1">
+                            <h4><a href="#">Industry Insights: Latest News & Developments</a></h4>
+                            <div class="space16"></div>
+                            <p>Our blog serves as a valuable resource for both job seekers and employers.</p>
+                            <div class="blog1-border"></div>
+                            <a href="#" class="learn">Learn More <span><i
+                                        class="fa-solid fa-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <!-- Blog Area End -->
 
 
+
 <!--=====BLOG AREA END=======-->
 
 
-<!--===== CTA AREA START =======-->
 <!-- CTA Area Start -->
 <div class="cta">
     <div class="container">
@@ -877,24 +1001,22 @@ get_header();
                 <div class="heading1-w">
                     <h2>Ready to Power up your Savings and Reliability?</h2>
                     <div class="space16"></div>
-                    <p>Feel free to customize this paragraph to better reflect the <br> specific services offered by your IT solution & the unique benefits.</p>
+                    <p>
+                        Feel free to customize this paragraph to better reflect the <br>
+                        specific services offered by your IT solution & the unique benefits.
+                    </p>
                 </div>
             </div>
 
-            <!-- CTA Subscription Form -->
+            <!-- Subscription Form Section -->
             <div class="col-lg-6">
                 <div class="subscribe-area">
-                    <?php if (shortcode_exists('newsletter')) : ?>
-                        <?php echo do_shortcode('[newsletter]'); // Replace with your newsletter plugin shortcode 
-                        ?>
-                    <?php else : ?>
-                        <form action="#" method="post">
-                            <input type="email" name="email" placeholder="Email Address" required>
-                            <div class="button">
-                                <button type="submit" class="theme-btn1">Subscribe Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
-                            </div>
-                        </form>
-                    <?php endif; ?>
+<form action="#">
+                            <input type="email" placeholder="Email Address">
+                          
+                            <button type="submit" class="theme-btn1">Subscribe Now <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                          
+                      </form>
                 </div>
             </div>
         </div>
@@ -904,122 +1026,5 @@ get_header();
 
 
 
-<!--===== CTA AREA START =======-->
-
-<!-- Footer Area Start -->
-<div class="footer1 _relative">
-    <div class="container">
-        <div class="row">
-            <!-- Footer Logo and Social Links -->
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-footer-items footer-logo-area">
-                    <div class="footer-logo">
-                        <a href="<?php echo esc_url(home_url('/')); ?>">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/logo/footer-logo1.png'); ?>" alt="Footer Logo">
-                        </a>
-                    </div>
-                    <div class="space20"></div>
-                    <div class="heading1-w">
-                        <p>Our goal is to demystify the process, address your concerns, and empower you with the knowledge to embark.</p>
-                    </div>
-                    <ul class="social-icon">
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-lg col-md-6 col-12">
-                <div class="single-footer-items">
-                    <h3>Quick Links</h3>
-                    <ul class="menu-list">
-                        <li><a href="#">Staff Management</a></li>
-                        <li><a href="#">Leadership Training</a></li>
-                        <li><a href="#">Corporate Program</a></li>
-                        <li><a href="#">Staffing Solutions</a></li>
-                        <li><a href="#">Blog Standard</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Explore Links -->
-            <div class="col-lg col-md-6 col-12">
-                <div class="single-footer-items pl-5">
-                    <h3>Explore</h3>
-                    <ul class="menu-list">
-                        <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
-                        <li><a href="<?php echo esc_url(site_url('/about')); ?>">About Us</a></li>
-                        <li><a href="<?php echo esc_url(site_url('/service')); ?>">Service</a></li>
-                        <li><a href="<?php echo esc_url(site_url('/testimonial')); ?>">Testimonial</a></li>
-                        <li><a href="<?php echo esc_url(site_url('/contact')); ?>">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Contact Information -->
-            <div class="col-lg-3 col-md-6 col-12">
-                <div class="single-footer-items">
-                    <h3>Contact Us</h3>
-                    <div class="contact-box">
-                        <div class="icon">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/footer-icon1.png'); ?>" alt="Phone Icon">
-                        </div>
-                        <div class="pera">
-                            <a href="tel:+880123456789">+880 123 456 789</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-box">
-                        <div class="icon">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/footer-icon2.png'); ?>" alt="Email Icon">
-                        </div>
-                        <div class="pera">
-                            <a href="mailto:info@mail.com">info@mail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-box">
-                        <div class="icon">
-                            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/assets/img/icons/footer-icon3.png'); ?>" alt="Address Icon">
-                        </div>
-                        <div class="pera">
-                            <a href="#">8502 Preston Rd. <br> Inglewood, Maine 98380</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="space70"></div>
-    </div>
-
-    <!-- Copyright Area -->
-    <div class="copyright-area _relative">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <div class="coppyright">
-                        <p>© Copyright <?php echo date('Y'); ?> - Recrute. All Rights Reserved</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Footer Area End -->
-
-
-<!-- Additional sections like Services, Projects, etc. -->
-<div class="service1 sp">
-    <div class="container">
-        <!-- Example Service Section Content -->
-        <h2>Tailored Solutions for Your Hiring Needs</h2>
-        <p>We support your organization's growth and hiring goals.</p>
-        <!-- Add remaining service, project, and other sections from your HTML here -->
-    </div>
-</div>
 
 <?php get_footer(); ?>
